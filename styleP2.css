@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway/static/Raleway-Regular.ttf);
+}
+
+#Header
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.Navi
+{
+    border: 10px;
+}
+
+.Searchbutton
+{
+    background-color: #0065FC;
+  color: white;
+  font-weight: normal;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 2px;
+  font-size: 20px;
+  margin: 5px;
+}

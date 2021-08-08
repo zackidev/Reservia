@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="Fontawesome/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="image/logoreservia.png" alt="logo reservia">
-        <nav>
-            <a href="">Hébergements</a>
-            <a href="">Activités</a>
-            <a href="">S'inscrire</a>
+    <header id="Header"> 
+        <img class="Headlogo" src="image/logoreservia.png" alt="logo reservia">
+        <nav id="Navhead">
+            <a class="Navi" href="rien.html">Hébergements</a>
+            <a class="Navi" href="rien.html">Activités</a>
+            <a class="Navi" href="rien.html">S'inscrire</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <header>
+            <header >
                 <h1>Trouver votre hébergements pour des vancances de rêves</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
             </header>
 
             <form method="POST" >
+                <i class="fas fa-map-marker-alt"></i>
                 <input type="search" placeholder="Marseille, France"/>
-                <button type="button"><i class="fas fa-map-marker-alt"></i>Rechercher</button> 
+                <button class="Searchbutton" type="button">Rechercher</button> 
             </form>
 
             <h2>Filtres</h2>
@@ -172,6 +173,7 @@
 
             <h2>Activités à Marseille</h2>
 
+            <div>
             <figure>
                 <img src="image/Vieuxport.jpg" alt="Vieux port"/>
                 <figcaption> Vieux port
@@ -193,7 +195,9 @@
                 </figcaption>    
                    
             </figure>
+            </div>
 
+            <div>
             <figure>
                 <img src="image/Calanques.jpg" alt="Parc National des Calanques"/>
                 <figcaption> Parc National des Calanques
@@ -214,6 +218,7 @@
                     
                 </figcaption>
             </figure>
+            </div>
           
         </section>    
 
