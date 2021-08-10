@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Fontawesome/css/all.min.css">
 </head>
 <body>
-    <header id="Header"> 
+    <header id="MainHeader"> 
         <img class="Headlogo" src="image/logoreservia.png" alt="logo reservia">
         <nav id="Navhead">
             <a class="Navi" href="rien.html">Hébergements</a>
@@ -17,8 +17,8 @@
     </header>
 
     <main>
-        <section>
-            <header >
+        <section id="Filtresection">
+            <header>
                 <h1>Trouver votre hébergements pour des vancances de rêves</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
             </header>
@@ -29,17 +29,19 @@
                 <button class="Searchbutton" type="button">Rechercher</button> 
             </form>
 
-            <h2>Filtres</h2>
-            <button type="button"><i class="fas fa-money-bill-wave"></i>Economique</button>
-            <button type="button"><i class="fas fa-child"></i>Familial</button>
-            <button type="button"><i class="fas fa-heart"></i>Romantique</button>
-            <button type="button"><i class="fas fa-dog"></i>Animaux autorisés</button>
+            <div id="Filtresbutton">
+                <h2>Filtres</h2>
+            <button class="Button" type="button"><i  class="fas fa-money-bill-wave"></i>Economique</button>
+            <button class="Button" type="button"><i  class="fas fa-child"></i>Familial</button>
+            <button class="Button" type="button"><i  class="fas fa-heart"></i>Romantique</button>
+            <button class="Button" type="button"><i  class="fas fa-dog"></i>Animaux autorisés</button>
+            </div>
            
             <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville.</p>
         
         </section>
 
-        <section>
+        <section id="Sectionhebergement">
             <h2>Hébergements à Marseille</h2>
 
             <figure>
