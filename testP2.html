@@ -12,40 +12,45 @@
         <nav id="Navhead">
             <a class="Navi" href="rien.html">Hébergements</a>
             <a class="Navi" href="rien.html">Activités</a>
-            <a class="Navi" href="rien.html">S'inscrire</a>
+            <a class="Navione" href="rien.html">S'inscrire</a>
         </nav>
     </header>
 
     <main>
         <section id="Filtresection">
             <header>
-                <h1>Trouver votre hébergements pour des vancances de rêves</h1>
+                <h1>Trouver votre hébergements pour des vancances de rêve</h1>
                 <h2>En plein centre ville ou en pleine nature</h2>
             </header>
 
+            <div class="recherche">
             <form method="POST" >
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Marseille, France"/>
-                <button class="Searchbutton" type="button">Rechercher</button> 
+                <input type="text" placeholder="Marseille, France"/>
+                <button type="button">Rechercher</button> 
             </form>
+            </div>
 
             <div id="Filtresbutton">
                 <h2>Filtres</h2>
-            <button class="Button" type="button"><i  class="fas fa-money-bill-wave"></i>Economique</button>
-            <button class="Button" type="button"><i  class="fas fa-child"></i>Familial</button>
-            <button class="Button" type="button"><i  class="fas fa-heart"></i>Romantique</button>
-            <button class="Button" type="button"><i  class="fas fa-dog"></i>Animaux autorisés</button>
+            <button class="Buttonflitre" type="button"><i  class="fas fa-money-bill-wave filtre"></i>Economique</button>
+            <button class="Buttonflitre" type="button"><i  class="fas fa-child filtre"></i>Familial</button>
+            <button class="Buttonflitre" type="button"><i  class="fas fa-heart filtre"></i>Romantique</button>
+            <button class="Buttonflitre" type="button"><i  class="fas fa-dog filtre"></i>Animaux autorisés</button>
             </div>
            
             <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville.</p>
         
         </section>
 
-        <section id="Sectionhebergement">
+
+        <div id="logement" >
+        <section class="sectionhebergement">
             <h2>Hébergements à Marseille</h2>
 
-            <figure>
-                <img src="image/Cannebiere.jpg" alt="Auberge Cannebière"/>
+             <div id="firstcontain">
+             <figure class="hebergementvignette">        
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge Cannebière"/>
                 <figcaption> 
                     <h3>Auberge de la Cannebière</h3>
                     <p>Nuit à partir de 25€</p>
@@ -57,8 +62,10 @@
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Duport.jpg" alt="Hôtel du port"/>
+            
+
+            <figure class="hebergementvignette">
+                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                 <figcaption> 
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 52€</p>
@@ -70,8 +77,8 @@
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Lesmouettes.jpg" alt="Hôtel les Mouettes"/>
+            <figure class="hebergementvignette">
+                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les Mouettes"/>
                 <figcaption> 
                     <h3>Hôtel les Mouettes</h3>
                     <p>Nuit à partir de 76€</p>
@@ -83,8 +90,8 @@
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Lamer.jpg" alt="Hôtel de la mer"/>
+            <figure class="hebergementvignette">
+                <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                 <figcaption> 
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de 46€</p>
@@ -96,8 +103,8 @@
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Lepanier.jpg" alt="Auberge le Panier"/>
+            <figure class="hebergementvignette">
+                <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier"/>
                 <figcaption> 
                     <h3>Auberge le Panier</h3>
                     <p>Nuit à partir de 23€</p>
@@ -109,8 +116,8 @@
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Amina.jpg" alt="Auberge chez Amina"/>
+            <figure class="hebergementvignette">
+                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Auberge chez Amina"/>
                 <figcaption> 
                     <h3>Auberge chez Amina</h3>
                     <p>Nuit à partir de 96€</p>
@@ -121,77 +128,85 @@
                     <i class="fas fa-star"></i>
                 </figcaption>
             </figure>
+            </div>
+            
            
-        <a class="rienencore.html" href="#">Afficher plus</a>
+        <a class="Navisection" href="#">Afficher plus</a>
 
         </section>
 
-        <section>
-            <h2><i class="fas fa-chart-line"></i>Les plus populaires</h2>
+        <section class="sectionpopulaire" >
+            <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
             
-
-            <figure>
-                <img src="image/Dumatin.jpg" alt="Hôtel Le soleil du matin"/>
+            <div class="secondcontain">
+            <figure class="hebergementpopulaire">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                 <figcaption> 
-                    <h3>Hôtel de la mer</h3>
-                    <p>Nuit à partir de 46€</p>
+                    <h3>Hôtel Le soleil du matin</h3>
+                    <p>Nuit à partir de 128€
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
+                </p>
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Aucoeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
+            <figure class="hebergementpopulaire">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
                 <figcaption> 
-                    <h3>Hôtel de la mer</h3>
-                    <p>Nuit à partir de 46€</p>
+                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                    <p>Nuit à partir de 71€
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    </p>
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Bleuetblanc.jpg" alt="Hôtel Tout bLeu et blanc"/>
+            <figure class="hebergementpopulaire">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bLeu et blanc"/>
                 <figcaption> 
-                    <h3>Hôtel de la mer</h3>
-                    <p>Nuit à partir de 46€</p>
+                    <h3>Hôtel Tout bLeu et blanc</h3>
+                    <p>Nuit à partir de 68€
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
+                    </p>
                 </figcaption>
             </figure>
+            </div>
+            
     
         </section>
+        </div>
 
-        <section>
+        <section id="Dernieresection">
 
             <h2>Activités à Marseille</h2>
 
-            <div>
-            <figure>
-                <img src="image/Vieuxport.jpg" alt="Vieux port"/>
+            <div class="Activite">
+            <figure class="Activitemain">
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port"/>
                 <figcaption> Vieux port
                     
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Pomeges.jpg" alt="Fort du Pomèges"/>
+            <figure class="Activitesecond">
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort du Pomèges"/>
                 <figcaption> Fort du Pomèges
                     
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Frioul.jpg" alt="Ile du Frioul"/>
+            <figure class="Activitesecond">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Ile du Frioul"/>
                 <figcaption> Ile du Frioul
 
                 </figcaption>    
@@ -199,23 +214,23 @@
             </figure>
             </div>
 
-            <div>
-            <figure>
-                <img src="image/Calanques.jpg" alt="Parc National des Calanques"/>
+            <div class="Activite">
+            <figure class="Activitemain">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
                 <figcaption> Parc National des Calanques
                     
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Delagarde.jpg" alt="Notre Dame de la Garde"/>
+            <figure class="Activitesecond">
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde"/>
                 <figcaption> Notre Dame de la Garde
                     
                 </figcaption>
             </figure>
 
-            <figure>
-                <img src="image/Longchamps.jpg" alt="Parc Longchamps"/>
+            <figure class="Activitesecond">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps"/>
                 <figcaption> Parc Longchamps
                     
                 </figcaption>
